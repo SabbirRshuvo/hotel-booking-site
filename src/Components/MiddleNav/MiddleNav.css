@@ -1,0 +1,33 @@
+.nav {
+    background-color: rgb(109, 117, 167);
+    padding: 20px 80px;
+}
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#links li {
+    list-style: none;
+    position: relative;
+}
+#links li a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+#links li a:hover {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+#links li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
